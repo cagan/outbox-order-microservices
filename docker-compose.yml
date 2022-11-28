@@ -49,7 +49,7 @@ services:
   # Install debezium-connect and add outbox-transformer here.
   debezium-connect:
     container_name: order-debezium-connect
-    image: debezium/connect:1.4
+    image: outbox-transformer
     hostname: debezium-connect
     ports:
       - '8083:8083'
